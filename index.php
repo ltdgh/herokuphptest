@@ -1,6 +1,11 @@
 <?php
-$now = new DateTime('now', new DateTimeZone('Asia/Tokyo'));
+
+$tz = new DateTimeZone('Asia/Tokyo');
+$now = new DateTime('now', $tz);
 echo $now->format('G');
 
-$hoge = getenv('LTDNAME');
-echo $hoge;
+$now2 = new DateTime('now', new DateTimeZone('asia/tokyo'));
+echo $now2->format('G');
+
+//$hoge = getenv('LTDNAME');
+//echo $hoge;
