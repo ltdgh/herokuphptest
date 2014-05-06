@@ -9,3 +9,5 @@ echo $now2->format('G');
 
 //$hoge = getenv('LTDNAME');
 //echo $hoge;
+
+// githubに先にpush
